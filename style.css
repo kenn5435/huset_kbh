@@ -1,0 +1,207 @@
+/* global */
+
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    outline: 0;
+    vertical-align: baseline;
+
+}
+
+:root {
+
+    --main-blue: #ADDDFF;
+    --main-blue-light: #D8E1E7;
+}
+
+
+html {
+
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom right;
+    background-color: var(--main-blue-light);
+    height: 100vh;
+    width: 100%;
+}
+
+
+h1 {
+    font-size: 50px;
+    color: black;
+    line-height: 56px;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+
+}
+
+p {
+    font-size: 20px;
+    color: black;
+    font-weight: 300;
+}
+
+
+.bolder {
+    font-weight: bolder;
+}
+
+
+.btnSmall {
+    background-color: var(--main-blue);
+    border-radius: 5px;
+    display: inline-block;
+    width: 150px;
+    padding: 0.8em;
+    text-align: center;
+    -webkit-box-shadow: 0px 4px 11px 0px rgba(50, 50, 50, 0.18);
+    -moz-box-shadow: 0px 4px 11px 0px rgba(50, 50, 50, 0.18);
+    box-shadow: 0px 4px 11px 0px rgba(50, 50, 50, 0.18);
+
+}
+
+
+.btnSmall p,
+.btnSmall img {
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+
+.btnLarge {
+    background-color: var(--main-blue);
+    border-radius: 5px;
+    display: inline-block;
+    width: 150px;
+    padding: 0.8em 1.75em;
+    text-align: center;
+    -webkit-box-shadow: 0px 4px 11px 0px rgba(50, 50, 50, 0.18);
+    -moz-box-shadow: 0px 4px 11px 0px rgba(50, 50, 50, 0.18);
+    box-shadow: 0px 4px 11px 0px rgba(50, 50, 50, 0.18);
+
+}
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-height: 900px;
+
+}
+
+
+
+
+/* Nav */
+
+.mobile {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+nav {
+    text-align: right;
+    padding-top: 40px;
+
+}
+
+nav a:not(:first-child) {
+    margin-left: 50px;
+
+}
+
+.logo {
+    float: left;
+}
+
+
+#overlay {
+    height: 100vh;
+    widows: 100%;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    background-color: var(--main-blue);
+
+}
+
+#overlay a:not(:first-child) {
+    width: 100%;
+    display: block;
+    margin: 150px 0 0 0;
+
+
+}
+
+#overlay a:first-child {
+    float: right;
+    margin: 65px 5% 0 0;
+
+
+}
+
+#overlay a:hover {
+    opacity: 0.5;
+}
+
+
+
+
+/* landing */
+
+
+.landing {
+    margin-top: 20em;
+    width: 600px;
+}
+
+
+/* social icon*/
+
+
+
+
+/* responsiv */
+
+
+@media (max-width:980px) {
+
+    .desktop {
+        display: none;
+
+    }
+
+    .mobile {
+        display: block;
+        margin-top: 23px;
+
+    }
+
+    .landing {
+        width: 100%;
+        margin-top: 7em;
+    }
+
+    body {
+        background-size: 200%;
+    }
+
+}
